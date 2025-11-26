@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - SwiftDrop Delivery</title>
+  <link rel="icon" href="public/logo-swiftdrop.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html"><img src="public/logo-swiftdrop.png" alt="SwiftDrop Delivery" class="logo" /></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact SwiftDrop Delivery</h1>
+    <div class="card contact-card">
+      <p><strong>Email:</strong> support@swiftdrop.com</p>
+      <p><strong>Phone:</strong> +123 456 7890</p>
+      <p>Office: 123 Swift Street, Your City</p>
+      <h3>Send us a message</h3>
+      <form id="contactForm">
+        <input class="input" id="name" placeholder="Your name" required />
+        <input class="input" id="email" placeholder="Email" required />
+        <textarea class="input" id="message" placeholder="Message" rows="5" required></textarea>
+        <button class="cta" type="submit">Send Message</button>
+      </form>
+      <div id="contactResult" style="display:none" class="card"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year4"></span> SwiftDrop Delivery — All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('contactResult').style.display='block';
+      document.getElementById('contactResult').textContent = 'Thanks! We received your message. We will contact you soon.';
+    });
+  </script>
+</body>
+</html>
