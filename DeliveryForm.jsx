@@ -1,10 +1,9 @@
-
 import React from "react";
 
 export default function DeliveryForm() {
   return (
-    <div style={{ padding: "20px", maxWidth: "900px", margin: "auto" }}>
-      <h1 style={{ textAlign: "center", color: "#D40511" }}>Swift Drop Delivery Form</h1>
+    <div style={{ padding: "20px" }}>
+      <h2>Delivery Request Form</h2>
 
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLScV2OkbcHexdx8EdxIh7WQX3UvXV0MHuWom7GW9PR3wsvCCdQ/viewform?embedded=true"
@@ -13,7 +12,6 @@ export default function DeliveryForm() {
         frameBorder="0"
         marginHeight="0"
         marginWidth="0"
-        title="Delivery Form"
       >
         Loading…
       </iframe>
