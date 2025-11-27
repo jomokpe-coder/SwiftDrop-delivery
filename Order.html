@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Delivery Order - SwiftDrop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #0070f3;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0059c9;
+        }
+        .success {
+            text-align: center;
+            padding: 15px;
+            background: #d4ffd4;
+            border: 1px solid #7bd67b;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Delivery Order Form</h2>
+
+    <div id="successMessage" class="success">
+        Your order has been submitted successfully!
+    </div>
+
+    <form id="orderForm">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
+
+        <label>Pickup Address</label>
+        <textarea name="pickup" required></textarea>
+
+        <label>Delivery Address</label>
+        <textarea name="delivery" required></textarea>
+
+        <label>Package Type</label>
+        <select name="package">
+            <option>Small Package</option>
+            <option>Medium Package</option>
+            <option>Large Package</option>
+            <option>Fragile Item</option>
+        </select>
+
+        <label>Additional Notes</label>
+        <textarea name="notes" placeholder="Optional"></textarea>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("successMessage").style.display = "block";
+    this.reset();
+});
+</script>
+
+</body>
+</html>
