@@ -1,11 +1,11 @@
 {
   "SD202511260983": {
     "status": "Out for Delivery Madrid",
-    "lastUpdate": "2025-11-28 14:32",
+    "lastUpdate": "2025-11-29 15:32",
     "stages": [
       "Package received at SwiftDrop facility",
-      "Sorting center – Madrid",
-      "In transit",
+      "SwiftDrop Delivery Madrid",
+      "Held by custom",
       "",
       ""
     ]
