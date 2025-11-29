@@ -5,7 +5,7 @@
     "stages": [
       "Package Received",
       "Arrived at Lagos Processing Center",
-      "In Transit",
+      "out for Delivery",
       "Arrived at Destination Facility",
       "Out for Delivery"
     ]
