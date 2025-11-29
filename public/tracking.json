@@ -1,0 +1,14 @@
+{
+  "SD202511260983": {
+    "status": "Out for Delivery",
+    "lastUpdate": "2025-11-29 12:10",
+    "stages": [
+      "Package Received",
+      "Arrived at Lagos Processing Center",
+      "In Transit",
+      "Arrived at Destination Facility",
+      "Out for Delivery"
+    ]
+  }
+}
+
