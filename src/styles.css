@@ -1,10 +1,91 @@
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f7fbff;color:#123;}
-.container{max-width:1000px;margin:0 auto;padding:20px;}
-.site-header{background:#fff;padding:12px 0;box-shadow:0 2px 6px rgba(0,0,0,0.06);position:sticky;top:0;z-index:50;}
-.site-header .container{display:flex;align-items:center;justify-content:space-between;}
-.logo{height:56px;}
-nav a{margin-left:18px;text-decoration:none;color:#045;}
-.page{padding:60px 20px;text-align:center;}
-.primary-btn{display:inline-block;background:#D40511;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;}
-footer.footer{padding:18px;text-align:center;background:#022c44;color:#fff;margin-top:40px;}
-input{padding:10px;border:1px solid #ddd;border-radius:6px;}
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f7ff;        /* light blue background */
+  color: #1f2d3d;
+  line-height: 1.7;
+}
+
+/* NAVIGATION */
+header {
+  background: #0057ff;        /* main blue */
+  padding: 18px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #0037c2;
+}
+
+/* MAIN PAGES */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+button, .primary-btn {
+  background: #0057ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button:hover,
+.primary-btn:hover {
+  background: #0037c2;
+}
+
+/* INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #d0d7ff;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  border-color: #0057ff;
+  outline: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #002b80;
+  color: white;
+  margin-top: 60px;
+}
