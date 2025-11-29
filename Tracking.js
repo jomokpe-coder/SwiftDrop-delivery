@@ -1,15 +1,31 @@
-import React, {useState} from 'react';
+{
+  "SD202511260983": {
+    "status": "Out for Delivery Madrid",
+    "lastUpdate": "2025-11-28 14:32",
+    "stages": [
+      "Package received at SwiftDrop facility",
+      "Sorting center – Madrid",
+      "In transit",
+      "",
+      ""
+    ]
+  },
 
-export default function Tracking(){
-  const [code, setCode] = useState('');
-  const [result, setResult] = useState(null);
-  function check(){ setResult('Package is in transit.'); }
-  return (
-    <div className="page container">
-      <h1>Track Package</h1>
-      <input value={code} onChange={e=>setCode(e.target.value)} placeholder="Enter tracking number" />
-      <button onClick={check} className="primary-btn" style={{marginLeft:10}}>Track</button>
-      {result && <p style={{marginTop:12}}>{result}</p>}
-    </div>
-  );
+  "SD202511270441": {
+    "status": "In Transit",
+    "lastUpdate": "2025-11-28 10:14",
+    "stages": [
+      "Package received",
+      "Sorting center – Abuja",
+      "In transit"
+    ]
+  },
+
+  "SD202511280215": {
+    "status": "Pending",
+    "lastUpdate": "2025-11-28 08:40",
+    "stages": [
+      "Order created"
+    ]
+  }
 }
